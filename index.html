@@ -3,43 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nandu Bhai Restaurant</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Nandu Bhai - Restaurant</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to Nandu Bhai Restaurant</h1>
-        <nav>
-            <ul>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">Nandu Bhai</div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
                 <li><a href="#menu">Menu</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="menu">
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Nandu Bhai</h1>
+            <p>Experience authentic and delicious cuisine</p>
+            <button class="btn-primary">Order Now</button>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
             <h2>Our Menu</h2>
-            <ul>
-                <li>Biryani - $10</li>
-                <li>Kebab - $8</li>
-                <li>Tandoori Chicken - $12</li>
-                <li>Paneer Butter Masala - $9</li>
-            </ul>
-        </section>
-        <section id="about">
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <h3>Butter Chicken</h3>
+                    <p>Tender chicken in a rich, creamy tomato sauce</p>
+                    <span class="price">$12.99</span>
+                </div>
+                <div class="menu-item">
+                    <h3>Biryani</h3>
+                    <p>Fragrant rice with spiced meat and vegetables</p>
+                    <span class="price">$14.99</span>
+                </div>
+                <div class="menu-item">
+                    <h3>Tandoori Naan</h3>
+                    <p>Soft and fluffy Indian bread baked in tandoor</p>
+                    <span class="price">$3.99</span>
+                </div>
+                <div class="menu-item">
+                    <h3>Samosas</h3>
+                    <p>Crispy triangular pastries with spiced filling</p>
+                    <span class="price">$5.99</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
             <h2>About Us</h2>
-            <p>Nandu Bhai Restaurant offers authentic Indian cuisine with a modern twist.</p>
-        </section>
-        <section id="contact">
+            <p>Nandu Bhai is a family-owned restaurant serving authentic Indian cuisine for over 15 years. We pride ourselves on using fresh ingredients and traditional recipes passed down through generations.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
             <h2>Contact Us</h2>
-            <p>Email: contact@nandubhai.com</p>
-            <p>Phone: (123) 456-7890</p>
-        </section>
-    </main>
+            <form class="contact-form" id="contactForm">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="btn-primary">Send Message</button>
+            </form>
+            <div class="contact-info">
+                <p>📞 +1 (555) 123-4567</p>
+                <p>📧 info@nandubhai.com</p>
+                <p>📍 123 Main Street, City, State 12345</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
         <p>&copy; 2026 Nandu Bhai Restaurant. All rights reserved.</p>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
